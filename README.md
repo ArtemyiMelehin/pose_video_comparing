@@ -85,4 +85,4 @@ TH_MAJOR = 20   # красная подсветка
 ```
 
 ## Демонстрация
-![Сравнение поз](docs/demo.gif)
+![Сравнение поз](docs/demo_pose_estimation.gif)
