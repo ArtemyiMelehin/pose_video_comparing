@@ -1,0 +1,51 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist/
+build/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Environments ---
+# твой venv
+cv_diploma_env/
+# общие варианты
+.venv/
+venv/
+env/
+
+# --- IDE/OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Project outputs / datasets ---
+outputs/
+# если хочешь оставить структуру папок, добавь .gitkeep и снимай игнор для него:
+!outputs/**/.gitkeep
+
+data/ref/*
+data/usr/*
+!data/**/.gitkeep
+
+# --- Weights / models ---
+weights/*
+!weights/**/.gitkeep
+
+# --- Videos anywhere (на всякий случай) ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# --- Images, if you don't want plots in repo ---
+# (откомментируй, если нужно коммитить картинки графиков)
+# *.png
+# *.jpg

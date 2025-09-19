@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pose_eval"           # имя дистрибутива (может быть любым)
+version = "0.1.0"
+description = "Pose comparison (dance/yoga) with MediaPipe, DTW and per-joint tips"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}              # корень пакетов = src
+
+# Явно перечисляем пакеты, чтобы не было сюрпризов с autodiscovery
+packages = [
+  "pose_eval",
+  "pose_eval.core",
+  "pose_eval.backends",
+  "pose_eval.viz",
+  "pose_eval.io",
+]
